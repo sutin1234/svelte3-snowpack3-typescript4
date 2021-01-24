@@ -13,8 +13,3 @@ The example is based on Snowpack's Svelte [CSA](https://www.snowpack.dev/#create
 - :heavy_check_mark: Typescript support
 - :heavy_check_mark: PostCSS with Tailwind CSS
 
-
-## There is more!
-
-For more interesting stuff like this follow me on [Twitter](https://twitter.com/codechips) or check out my blog at https://codechips.me
-
