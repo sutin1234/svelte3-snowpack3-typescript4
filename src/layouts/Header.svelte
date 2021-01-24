@@ -10,10 +10,7 @@
     <BrandLogo textTitle="Svelte3" textColorArray={textColor} textLink="/" />
 
     <a class="text-black hover:text-orange md:hidden" href="#">
-      <Icon name="fa-dev" color="text-blue-600" title="รูปโลโก้" />
-      <Icon prefix="fas" name="fa-code" size="fa-3x" color="text-red-600" />
-      <Icon prefix="fas" name="fa-database" size="fa-3x" color="text-green-700" />
-      <Icon prefix="fas" name="fa-file-code" size="fa-5x" color="text-pink-600" />
+      <Icon name="fa-dev" color="text-blue-600" />
     </a>
   </div>
   <!-- END Logo text or image -->
