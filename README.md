@@ -13,14 +13,6 @@ The example is based on Snowpack's Svelte [CSA](https://www.snowpack.dev/#create
 - :heavy_check_mark: Typescript support
 - :heavy_check_mark: PostCSS with Tailwind CSS
 
-## To run the example
-
-```bash
-$ git clone https://github.com/codechips/svelte-snowpack-testdrive.git
-$ cd svelte-snowpack-testdrive
-$ npm i && npm start
-
-```
 
 ## There is more!
 
