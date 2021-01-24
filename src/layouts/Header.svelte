@@ -2,6 +2,8 @@
   import BrandLogo from '@/components/BrandLogo.svelte';
   const textColor: Array<string> = ['no-underline', 'text-blue-800', 'hover:text-black'];
   import Icon from '@/components/Icon.svelte';
+   import { link } from 'svelte-spa-router'
+
 </script>
 
 <header class="p-4 pb-0 border-b shadow-lg md:flex md:items-center md:justify-between md:pb-4">
@@ -32,18 +34,13 @@
     <ul class="list-reset md:flex md:items-center">
       <li class="md:ml-4">
         <a
-          class="block py-2 no-underline hover:underline text-grey-darkest hover:text-black md:border-none md:p-0"
-          href="#"> Products </a>
+          class="block py-2 no-underline border-t hover:underline text-grey-darkest hover:text-black md:border-none md:p-0"
+          href="/about" use:link> About </a>
       </li>
       <li class="md:ml-4">
         <a
           class="block py-2 no-underline border-t hover:underline text-grey-darkest hover:text-black md:border-none md:p-0"
-          href="#"> About </a>
-      </li>
-      <li class="md:ml-4">
-        <a
-          class="block py-2 no-underline border-t hover:underline text-grey-darkest hover:text-black md:border-none md:p-0"
-          href="#"> Contact </a>
+          href="/contact" use:link> Contact </a>
       </li>
     </ul>
   </nav>

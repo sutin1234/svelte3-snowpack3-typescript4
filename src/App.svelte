@@ -1,16 +1,23 @@
-<script>
+<script lang="ts">
   import './main.css';
-  import '@fortawesome/fontawesome-free/js/all'
-  import { timer } from './timer';
-  import { interval } from 'rxjs';
-  import { map, startWith } from 'rxjs/operators';
-  import Header from '@/layouts/Header.svelte'
-  const rxTimer = interval(1000).pipe(
-    startWith(0),
-    map((v) => v * 2)
-  );
+  import '@fortawesome/fontawesome-free/js/all';
+  import Router from 'svelte-spa-router';
+  // import { Router } from "@roxi/routify";
+  import { onMount } from 'svelte'
+
+  import Header from '@/layouts/Header.svelte';
+  import routes from '@/routes';
+
+
+  onMount(() =>{
+    console.log('onMounted ', routes);
+  })
+  const routeLoaded = (event) => {
+    console.log('routeLoaded ', event.detail);
+  }
 </script>
 
 <div class="app">
   <Header />
+  <Router {routes} on:routeLoaded={routeLoaded} />
 </div>

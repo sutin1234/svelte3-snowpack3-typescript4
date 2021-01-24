@@ -12,14 +12,18 @@ module.exports = {
     "@snowpack/plugin-svelte",
     "@snowpack/plugin-dotenv",
     "@snowpack/plugin-typescript",
-    "@snowpack/plugin-postcss"
+    "@snowpack/plugin-postcss",
   ],
   install: [
     /* ... */
   ],
   installOptions: {
     installTypes: true,
-    /* ... */
+    // rollup: { 
+    //   plugins: [
+    //     require('rollup-plugin-svelte')()
+    //   ] 
+    // }
   },
   devOptions: {
     /* ... */

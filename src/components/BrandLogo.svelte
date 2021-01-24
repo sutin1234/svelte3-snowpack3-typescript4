@@ -1,8 +1,9 @@
 <h1 class="text-2xl leading-none text-grey-darkest">
-  <a class={textColor} href={textLink}>{textTitle}</a>
+  <a class={textColor} href={textLink} use:link>{textTitle}</a>
 </h1>
 <script lang="ts">
     import { onMount } from 'svelte';
+    import { link } from 'svelte-spa-router'
 
     // props
     export let textTitle: string;
